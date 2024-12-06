@@ -1,0 +1,63 @@
+@page
+@model YourProjectNamespace.Pages.SorryPageModel
+@{
+    ViewData["Title"] = "ขอโทษนะที่รัก";
+}
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa; /* สีฟ้าอ่อน */
+            color: #00796b; /* สีฟ้าเข้ม */
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .heart {
+            font-size: 3rem;
+            color: #f06292; /* สีชมพู */
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #004d40; /* สีฟ้าเข้มขึ้น */
+        }
+    </style>
+</head>
+<body>
+    <h1>ขอโทษนะที่รัก ❤️</h1>
+    <p>ที่รัก, ฉันขอโทษจากใจจริงๆ สำหรับทุกสิ่งที่เกิดขึ้น...</p>
+    <p>ขอโทษที่ทำให้เธอเสียใจ และขอโทษที่ทำให้ความรักของเรามีปัญหา 😔</p>
+    <p>ฉันสัญญาว่าจะทำตัวให้ดีขึ้นเพื่อให้เราได้กลับมาเป็นเหมือนเดิม ขอให้เธอให้อภัยฉันนะ 💙</p>
+    <div class="heart">💖</div>
+    <br>
+    <button class="button" onclick="window.location.href='/home'">กลับไปที่หน้าแรก</button>
+</body>
+</html>
